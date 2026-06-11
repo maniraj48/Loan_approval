@@ -1,0 +1,65 @@
+{
+  "features": [
+    "Gender",
+    "Married",
+    "Dependents",
+    "Education",
+    "Self_Employed",
+    "Property_Area",
+    "ApplicantIncome",
+    "CoapplicantIncome",
+    "LoanAmount",
+    "Loan_Amount_Term",
+    "Credit_History"
+  ],
+  "categorical_features": [
+    "Gender",
+    "Married",
+    "Dependents",
+    "Education",
+    "Self_Employed",
+    "Property_Area"
+  ],
+  "numeric_features": [
+    "ApplicantIncome",
+    "CoapplicantIncome",
+    "LoanAmount",
+    "Loan_Amount_Term",
+    "Credit_History"
+  ],
+  "target_mapping": {
+    "Rejected": 0,
+    "Approved": 1
+  },
+  "metrics": {
+    "accuracy": 0.8293,
+    "roc_auc": 0.8551,
+    "classification_report": {
+      "Rejected": {
+        "precision": 0.7297297297297297,
+        "recall": 0.7105263157894737,
+        "f1-score": 0.72,
+        "support": 38.0
+      },
+      "Approved": {
+        "precision": 0.872093023255814,
+        "recall": 0.8823529411764706,
+        "f1-score": 0.8771929824561403,
+        "support": 85.0
+      },
+      "accuracy": 0.8292682926829268,
+      "macro avg": {
+        "precision": 0.8009113764927718,
+        "recall": 0.7964396284829721,
+        "f1-score": 0.7985964912280701,
+        "support": 123.0
+      },
+      "weighted avg": {
+        "precision": 0.8281108675323082,
+        "recall": 0.8292682926829268,
+        "f1-score": 0.828629296819284,
+        "support": 123.0
+      }
+    }
+  }
+}

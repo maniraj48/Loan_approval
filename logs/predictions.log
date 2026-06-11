@@ -1,0 +1,24 @@
+INFO:root:Rejected
+INFO:root:Rejected
+INFO:root:Rejected
+INFO:root:Rejected
+INFO:root:Rejected
+INFO:httpx:HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+INFO:root:Approved
+INFO:httpx:HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://testserver/metrics "HTTP/1.1 200 OK"
+2026-06-11 20:48:40,129 INFO HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-11 20:48:40,159 INFO prediction=Approved approval_probability=0.6771 applicant_income=5000.00 loan_amount=120.00
+2026-06-11 20:48:40,164 INFO HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+2026-06-11 20:48:40,173 INFO HTTP Request: POST http://testserver/predict "HTTP/1.1 401 Unauthorized"
+2026-06-11 20:48:40,179 INFO HTTP Request: POST http://testserver/predict "HTTP/1.1 422 Unprocessable Entity"
+2026-06-11 21:05:01,266 INFO prediction=Approved approval_probability=0.6417 applicant_income=5000.00 loan_amount=120.00
+2026-06-11 21:07:01,371 INFO prediction=Rejected approval_probability=0.2392 applicant_income=70000.00 loan_amount=180.00
+2026-06-11 21:07:17,197 INFO prediction=Rejected approval_probability=0.2517 applicant_income=70000.00 loan_amount=110.00
+2026-06-11 21:45:43,143 INFO prediction=Approved approval_probability=0.6417 applicant_income=5000.00 loan_amount=120.00
+2026-06-11 21:46:00,041 INFO prediction=Approved approval_probability=0.6407 applicant_income=5000.00 loan_amount=125.00
+2026-06-11 21:46:02,854 INFO prediction=Approved approval_probability=0.6374 applicant_income=5000.00 loan_amount=140.00
+2026-06-11 21:46:06,044 INFO prediction=Approved approval_probability=0.6342 applicant_income=5000.00 loan_amount=155.00
+2026-06-11 21:46:09,692 INFO prediction=Approved approval_probability=0.6298 applicant_income=5000.00 loan_amount=175.00
+2026-06-11 21:46:17,394 INFO prediction=Approved approval_probability=0.6337 applicant_income=5000.00 loan_amount=175.00
+2026-06-11 21:47:14,621 INFO prediction=Approved approval_probability=0.6417 applicant_income=5000.00 loan_amount=120.00
